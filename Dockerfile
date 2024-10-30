@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     git
 
 # Install PyYAML using pip
-RUN pip3 install PyYAML
+RUN pip3 install PyYAML --break-system-packages
 
 # Copy your scripts into the container
 COPY feed.py /usr/bin/feed.py
